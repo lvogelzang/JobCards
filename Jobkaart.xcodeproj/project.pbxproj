@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED86206ACA520085DF5D /* AppDelegate.m */; };
+		EDFCED8A206ACA520085DF5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED89206ACA520085DF5D /* ViewController.m */; };
+		EDFCED8D206ACA520085DF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED8B206ACA520085DF5D /* Main.storyboard */; };
+		EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED8E206ACA520085DF5D /* Assets.xcassets */; };
+		EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */; };
+		EDFCED95206ACA520085DF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED94206ACA520085DF5D /* main.m */; };
+		EDFCED9F206ACA520085DF5D /* JobkaartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED9E206ACA520085DF5D /* JobkaartTests.m */; };
+		EDFCEDAA206ACA520085DF5D /* JobkaartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDA9206ACA520085DF5D /* JobkaartUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDFCED9B206ACA520085DF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFCED7A206ACA520085DF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFCED81206ACA520085DF5D;
+			remoteInfo = Jobkaart;
+		};
+		EDFCEDA6206ACA520085DF5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFCED7A206ACA520085DF5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFCED81206ACA520085DF5D;
+			remoteInfo = Jobkaart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDFCED82206ACA520085DF5D /* Jobkaart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobkaart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFCED85206ACA520085DF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDFCED86206ACA520085DF5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EDFCED88206ACA520085DF5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EDFCED89206ACA520085DF5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EDFCED8C206ACA520085DF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDFCED8E206ACA520085DF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDFCED91206ACA520085DF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDFCED93206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFCED94206ACA520085DF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EDFCED9A206ACA520085DF5D /* JobkaartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobkaartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFCED9E206ACA520085DF5D /* JobkaartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobkaartTests.m; sourceTree = "<group>"; };
+		EDFCEDA0206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFCEDA5206ACA520085DF5D /* JobkaartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobkaartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDFCEDA9206ACA520085DF5D /* JobkaartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobkaartUITests.m; sourceTree = "<group>"; };
+		EDFCEDAB206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDFCED7F206ACA520085DF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCED97206ACA520085DF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCEDA2206ACA520085DF5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDFCED79206ACA520085DF5D = {
+			isa = PBXGroup;
+			children = (
+				EDFCED84206ACA520085DF5D /* Jobkaart */,
+				EDFCED9D206ACA520085DF5D /* JobkaartTests */,
+				EDFCEDA8206ACA520085DF5D /* JobkaartUITests */,
+				EDFCED83206ACA520085DF5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDFCED83206ACA520085DF5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCED82206ACA520085DF5D /* Jobkaart.app */,
+				EDFCED9A206ACA520085DF5D /* JobkaartTests.xctest */,
+				EDFCEDA5206ACA520085DF5D /* JobkaartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFCED84206ACA520085DF5D /* Jobkaart */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCED85206ACA520085DF5D /* AppDelegate.h */,
+				EDFCED86206ACA520085DF5D /* AppDelegate.m */,
+				EDFCED88206ACA520085DF5D /* ViewController.h */,
+				EDFCED89206ACA520085DF5D /* ViewController.m */,
+				EDFCED8B206ACA520085DF5D /* Main.storyboard */,
+				EDFCED8E206ACA520085DF5D /* Assets.xcassets */,
+				EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */,
+				EDFCED93206ACA520085DF5D /* Info.plist */,
+				EDFCED94206ACA520085DF5D /* main.m */,
+			);
+			path = Jobkaart;
+			sourceTree = "<group>";
+		};
+		EDFCED9D206ACA520085DF5D /* JobkaartTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCED9E206ACA520085DF5D /* JobkaartTests.m */,
+				EDFCEDA0206ACA520085DF5D /* Info.plist */,
+			);
+			path = JobkaartTests;
+			sourceTree = "<group>";
+		};
+		EDFCEDA8206ACA520085DF5D /* JobkaartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCEDA9206ACA520085DF5D /* JobkaartUITests.m */,
+				EDFCEDAB206ACA520085DF5D /* Info.plist */,
+			);
+			path = JobkaartUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDFCED81206ACA520085DF5D /* Jobkaart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFCEDAE206ACA520085DF5D /* Build configuration list for PBXNativeTarget "Jobkaart" */;
+			buildPhases = (
+				EDFCED7E206ACA520085DF5D /* Sources */,
+				EDFCED7F206ACA520085DF5D /* Frameworks */,
+				EDFCED80206ACA520085DF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jobkaart;
+			productName = Jobkaart;
+			productReference = EDFCED82206ACA520085DF5D /* Jobkaart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDFCED99206ACA520085DF5D /* JobkaartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFCEDB1206ACA520085DF5D /* Build configuration list for PBXNativeTarget "JobkaartTests" */;
+			buildPhases = (
+				EDFCED96206ACA520085DF5D /* Sources */,
+				EDFCED97206ACA520085DF5D /* Frameworks */,
+				EDFCED98206ACA520085DF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDFCED9C206ACA520085DF5D /* PBXTargetDependency */,
+			);
+			name = JobkaartTests;
+			productName = JobkaartTests;
+			productReference = EDFCED9A206ACA520085DF5D /* JobkaartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDFCEDA4206ACA520085DF5D /* JobkaartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDFCEDB4206ACA520085DF5D /* Build configuration list for PBXNativeTarget "JobkaartUITests" */;
+			buildPhases = (
+				EDFCEDA1206ACA520085DF5D /* Sources */,
+				EDFCEDA2206ACA520085DF5D /* Frameworks */,
+				EDFCEDA3206ACA520085DF5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDFCEDA7206ACA520085DF5D /* PBXTargetDependency */,
+			);
+			name = JobkaartUITests;
+			productName = JobkaartUITests;
+			productReference = EDFCEDA5206ACA520085DF5D /* JobkaartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDFCED7A206ACA520085DF5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Lodewijck;
+				TargetAttributes = {
+					EDFCED81206ACA520085DF5D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					EDFCED99206ACA520085DF5D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDFCED81206ACA520085DF5D;
+					};
+					EDFCEDA4206ACA520085DF5D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EDFCED81206ACA520085DF5D;
+					};
+				};
+			};
+			buildConfigurationList = EDFCED7D206ACA520085DF5D /* Build configuration list for PBXProject "Jobkaart" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDFCED79206ACA520085DF5D;
+			productRefGroup = EDFCED83206ACA520085DF5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDFCED81206ACA520085DF5D /* Jobkaart */,
+				EDFCED99206ACA520085DF5D /* JobkaartTests */,
+				EDFCEDA4206ACA520085DF5D /* JobkaartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDFCED80206ACA520085DF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */,
+				EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */,
+				EDFCED8D206ACA520085DF5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCED98206ACA520085DF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCEDA3206ACA520085DF5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDFCED7E206ACA520085DF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFCED8A206ACA520085DF5D /* ViewController.m in Sources */,
+				EDFCED95206ACA520085DF5D /* main.m in Sources */,
+				EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCED96206ACA520085DF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFCED9F206ACA520085DF5D /* JobkaartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDFCEDA1206ACA520085DF5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDFCEDAA206ACA520085DF5D /* JobkaartUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDFCED9C206ACA520085DF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFCED81206ACA520085DF5D /* Jobkaart */;
+			targetProxy = EDFCED9B206ACA520085DF5D /* PBXContainerItemProxy */;
+		};
+		EDFCEDA7206ACA520085DF5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDFCED81206ACA520085DF5D /* Jobkaart */;
+			targetProxy = EDFCEDA6206ACA520085DF5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDFCED8B206ACA520085DF5D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDFCED8C206ACA520085DF5D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDFCED91206ACA520085DF5D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDFCEDAC206ACA520085DF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EDFCEDAD206ACA520085DF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDFCEDAF206ACA520085DF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = Jobkaart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.Jobkaart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDFCEDB0206ACA520085DF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = Jobkaart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.Jobkaart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EDFCEDB2206ACA520085DF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = JobkaartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.JobkaartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobkaart.app/Jobkaart";
+			};
+			name = Debug;
+		};
+		EDFCEDB3206ACA520085DF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = JobkaartTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.JobkaartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jobkaart.app/Jobkaart";
+			};
+			name = Release;
+		};
+		EDFCEDB5206ACA520085DF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = JobkaartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.JobkaartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jobkaart;
+			};
+			name = Debug;
+		};
+		EDFCEDB6206ACA520085DF5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KYCK2JYUQB;
+				INFOPLIST_FILE = JobkaartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.JobkaartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jobkaart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDFCED7D206ACA520085DF5D /* Build configuration list for PBXProject "Jobkaart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFCEDAC206ACA520085DF5D /* Debug */,
+				EDFCEDAD206ACA520085DF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFCEDAE206ACA520085DF5D /* Build configuration list for PBXNativeTarget "Jobkaart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFCEDAF206ACA520085DF5D /* Debug */,
+				EDFCEDB0206ACA520085DF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFCEDB1206ACA520085DF5D /* Build configuration list for PBXNativeTarget "JobkaartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFCEDB2206ACA520085DF5D /* Debug */,
+				EDFCEDB3206ACA520085DF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDFCEDB4206ACA520085DF5D /* Build configuration list for PBXNativeTarget "JobkaartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDFCEDB5206ACA520085DF5D /* Debug */,
+				EDFCEDB6206ACA520085DF5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDFCED7A206ACA520085DF5D /* Project object */;
+}
