@@ -2,16 +2,15 @@
 //  AppDelegate.h
 //  Jobkaart
 //
-//  Created by Lodewijck on 27/03/2018.
-//  Copyright © 2018 Lodewijck. All rights reserved.
+//  Created by Lodewijck Vogelzang on 28-12-13.
+//  Copyright (c) 2013 Lodewijck Vogelzang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-
 @end
-

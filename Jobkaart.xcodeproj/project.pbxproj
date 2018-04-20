@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED20E29C20836F07006A674D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED20E29A208224C0006A674D /* WebKit.framework */; };
+		ED9B84FF20722893007150AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B84FD20722893007150AD /* MainViewController.m */; };
+		ED9B851220726C65007150AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B851120726C65007150AD /* main.m */; };
+		ED9B85542072710A007150AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B85532072710A007150AD /* Main.storyboard */; };
 		EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED86206ACA520085DF5D /* AppDelegate.m */; };
-		EDFCED8A206ACA520085DF5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED89206ACA520085DF5D /* ViewController.m */; };
-		EDFCED8D206ACA520085DF5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED8B206ACA520085DF5D /* Main.storyboard */; };
 		EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED8E206ACA520085DF5D /* Assets.xcassets */; };
 		EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */; };
-		EDFCED95206ACA520085DF5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED94206ACA520085DF5D /* main.m */; };
 		EDFCED9F206ACA520085DF5D /* JobkaartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED9E206ACA520085DF5D /* JobkaartTests.m */; };
 		EDFCEDAA206ACA520085DF5D /* JobkaartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDA9206ACA520085DF5D /* JobkaartUITests.m */; };
+		EDFCEDB9206ACB3E0085DF5D /* DatabaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDB8206ACB3E0085DF5D /* DatabaseController.m */; };
+		EDFCEDBF206ACBF30085DF5D /* ImageFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDBE206ACBF30085DF5D /* ImageFunctions.m */; };
+		EDFCEDC2206ACC120085DF5D /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC1206ACC120085DF5D /* Job.m */; };
+		EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC4206ACC300085DF5D /* JobCard.m */; };
+		EDFCEDC8206ACC4E0085DF5D /* JobView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC7206ACC4E0085DF5D /* JobView.m */; };
+		EDFCEDCE206ACCA60085DF5D /* PictureOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */; };
+		EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */; };
+		EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */; };
+		EDFCEDDA206ACD2D0085DF5D /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */; };
+		EDFCEDDD206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
+		EDFCEDDE206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
+		EDFCEDDF206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +48,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED20E29A208224C0006A674D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ED9B84FC20722893007150AD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		ED9B84FD20722893007150AD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		ED9B851120726C65007150AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ED9B85532072710A007150AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EDFCED82206ACA520085DF5D /* Jobkaart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobkaart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCED85206ACA520085DF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EDFCED86206ACA520085DF5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EDFCED88206ACA520085DF5D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EDFCED89206ACA520085DF5D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EDFCED8C206ACA520085DF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDFCED8E206ACA520085DF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDFCED91206ACA520085DF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDFCED93206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDFCED94206ACA520085DF5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EDFCED9A206ACA520085DF5D /* JobkaartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobkaartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCED9E206ACA520085DF5D /* JobkaartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobkaartTests.m; sourceTree = "<group>"; };
 		EDFCEDA0206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDFCEDA5206ACA520085DF5D /* JobkaartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobkaartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFCEDA9206ACA520085DF5D /* JobkaartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobkaartUITests.m; sourceTree = "<group>"; };
 		EDFCEDAB206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDFCEDB7206ACB3E0085DF5D /* DatabaseController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseController.h; sourceTree = "<group>"; };
+		EDFCEDB8206ACB3E0085DF5D /* DatabaseController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseController.m; sourceTree = "<group>"; };
+		EDFCEDBD206ACBF30085DF5D /* ImageFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageFunctions.h; sourceTree = "<group>"; };
+		EDFCEDBE206ACBF30085DF5D /* ImageFunctions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageFunctions.m; sourceTree = "<group>"; };
+		EDFCEDC0206ACC120085DF5D /* Job.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
+		EDFCEDC1206ACC120085DF5D /* Job.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
+		EDFCEDC3206ACC300085DF5D /* JobCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCard.h; sourceTree = "<group>"; };
+		EDFCEDC4206ACC300085DF5D /* JobCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCard.m; sourceTree = "<group>"; };
+		EDFCEDC6206ACC4E0085DF5D /* JobView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobView.h; sourceTree = "<group>"; };
+		EDFCEDC7206ACC4E0085DF5D /* JobView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobView.m; sourceTree = "<group>"; };
+		EDFCEDCC206ACCA60085DF5D /* PictureOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureOverlayView.h; sourceTree = "<group>"; };
+		EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureOverlayView.m; sourceTree = "<group>"; };
+		EDFCEDCF206ACCC50085DF5D /* PictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		EDFCEDD5206ACD090085DF5D /* JobCardRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCardRenderer.h; sourceTree = "<group>"; };
+		EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCardRenderer.m; sourceTree = "<group>"; };
+		EDFCEDD8206ACD2D0085DF5D /* PDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = JobCards.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED20E29C20836F07006A674D /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +112,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED20E299208224C0006A674D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED20E29A208224C0006A674D /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED9B85572072C2A2007150AD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCEDB7206ACB3E0085DF5D /* DatabaseController.h */,
+				EDFCEDB8206ACB3E0085DF5D /* DatabaseController.m */,
+				EDFCEDC0206ACC120085DF5D /* Job.h */,
+				EDFCEDC1206ACC120085DF5D /* Job.m */,
+				EDFCEDC3206ACC300085DF5D /* JobCard.h */,
+				EDFCEDC4206ACC300085DF5D /* JobCard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED9B85582072C2DA007150AD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCEDBD206ACBF30085DF5D /* ImageFunctions.h */,
+				EDFCEDBE206ACBF30085DF5D /* ImageFunctions.m */,
+				EDFCEDD5206ACD090085DF5D /* JobCardRenderer.h */,
+				EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EDFCED79206ACA520085DF5D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +151,7 @@
 				EDFCED9D206ACA520085DF5D /* JobkaartTests */,
 				EDFCEDA8206ACA520085DF5D /* JobkaartUITests */,
 				EDFCED83206ACA520085DF5D /* Products */,
+				ED20E299208224C0006A674D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +170,24 @@
 			children = (
 				EDFCED85206ACA520085DF5D /* AppDelegate.h */,
 				EDFCED86206ACA520085DF5D /* AppDelegate.m */,
-				EDFCED88206ACA520085DF5D /* ViewController.h */,
-				EDFCED89206ACA520085DF5D /* ViewController.m */,
-				EDFCED8B206ACA520085DF5D /* Main.storyboard */,
+				ED9B85532072710A007150AD /* Main.storyboard */,
+				ED9B84FC20722893007150AD /* MainViewController.h */,
+				ED9B84FD20722893007150AD /* MainViewController.m */,
+				EDFCEDC6206ACC4E0085DF5D /* JobView.h */,
+				EDFCEDC7206ACC4E0085DF5D /* JobView.m */,
+				EDFCEDCC206ACCA60085DF5D /* PictureOverlayView.h */,
+				EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */,
+				EDFCEDCF206ACCC50085DF5D /* PictureViewController.h */,
+				EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */,
+				EDFCEDD8206ACD2D0085DF5D /* PDFViewController.h */,
+				EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */,
+				ED9B85572072C2A2007150AD /* Models */,
+				ED9B85582072C2DA007150AD /* Utils */,
 				EDFCED8E206ACA520085DF5D /* Assets.xcassets */,
+				ED9B851120726C65007150AD /* main.m */,
 				EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */,
 				EDFCED93206ACA520085DF5D /* Info.plist */,
-				EDFCED94206ACA520085DF5D /* main.m */,
+				EDFCEDDB206ACD550085DF5D /* Supporting Files */,
 			);
 			path = Jobkaart;
 			sourceTree = "<group>";
@@ -130,6 +208,14 @@
 				EDFCEDAB206ACA520085DF5D /* Info.plist */,
 			);
 			path = JobkaartUITests;
+			sourceTree = "<group>";
+		};
+		EDFCEDDB206ACD550085DF5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +280,7 @@
 		EDFCED7A206ACA520085DF5D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Lodewijck;
 				TargetAttributes = {
 					EDFCED81206ACA520085DF5D = {
@@ -240,7 +326,8 @@
 			files = (
 				EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */,
 				EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */,
-				EDFCED8D206ACA520085DF5D /* Main.storyboard in Resources */,
+				ED9B85542072710A007150AD /* Main.storyboard in Resources */,
+				EDFCEDDD206ACD7A0085DF5D /* JobCards.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFCEDDE206ACD7A0085DF5D /* JobCards.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFCEDDF206ACD7A0085DF5D /* JobCards.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +354,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFCED8A206ACA520085DF5D /* ViewController.m in Sources */,
-				EDFCED95206ACA520085DF5D /* main.m in Sources */,
+				EDFCEDDA206ACD2D0085DF5D /* PDFViewController.m in Sources */,
+				EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */,
+				EDFCEDB9206ACB3E0085DF5D /* DatabaseController.m in Sources */,
+				EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */,
+				EDFCEDC8206ACC4E0085DF5D /* JobView.m in Sources */,
 				EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */,
+				ED9B84FF20722893007150AD /* MainViewController.m in Sources */,
+				EDFCEDBF206ACBF30085DF5D /* ImageFunctions.m in Sources */,
+				EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */,
+				EDFCEDC2206ACC120085DF5D /* Job.m in Sources */,
+				ED9B851220726C65007150AD /* main.m in Sources */,
+				EDFCEDCE206ACCA60085DF5D /* PictureOverlayView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +401,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDFCED8B206ACA520085DF5D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDFCED8C206ACA520085DF5D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -336,6 +426,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -343,6 +434,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -391,6 +483,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -398,6 +491,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
