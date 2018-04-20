@@ -18,7 +18,7 @@
     UIGraphicsBeginPDFPageWithInfo(CGRectMake(0, 0, 298, 420), nil);
 
     // Set colors for rectangles.
-    UIColor *red = [UIColor colorWithRed:256.0 green:54.0/256.0 blue:53.0/256.0 alpha:1];
+    UIColor *red = [UIColor colorWithRed:256.0/256.0 green:54.0/256.0 blue:53.0/256.0 alpha:1];
     UIColor *yellow = [UIColor colorWithRed:255.0/256.0 green:217.0/256.0 blue:100.0/256.0 alpha:1];
     UIColor *green = [UIColor colorWithRed:76.0/256.0 green:217.0/256.0 blue:100.0/256.0 alpha:1];
     UIColor *blue = [UIColor colorWithRed:52.0/256.0 green:170.0/256.0 blue:220.0/256.0 alpha:0.7];
