@@ -12,7 +12,7 @@
 @interface MainViewController : UIViewController
 
 typedef NS_ENUM(NSInteger, InputSource) {
-    Title = 1, Focus, NumberOfJobs, Department, Installation, Machine, Part, SIS, Frequency, Time, When,
+    Title = 1, Focus, NumberOfJobs, Department, Installation, Machine, Part, SIS, Frequency, Time, When, LOTOTO, 
     What1, WithWhat1, BasicCondition1, Action1,
     What2, WithWhat2, BasicCondition2, Action2,
     What3, WithWhat3, BasicCondition3, Action3
@@ -32,6 +32,7 @@ typedef NS_ENUM(NSInteger, InputSource) {
 @property (weak, nonatomic) IBOutlet UITextField *frequencyField;
 @property (weak, nonatomic) IBOutlet UITextField *timeField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *whenControl;
+@property (weak, nonatomic) IBOutlet UISwitch *lototoSwitch;
 
 @property (weak, nonatomic) IBOutlet UILabel *whatLabel1;
 @property (weak, nonatomic) IBOutlet UITextView *whatView1;

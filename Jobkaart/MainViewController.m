@@ -66,7 +66,11 @@
             break;
         case When:
             [_jobCard setWhen:[self selectedTitle:_whenControl]];
+            [self updateLototoSwitchAnimated:YES];
             break;
+        case LOTOTO:
+            [_jobCard setLototo:[_lototoSwitch isOn]];
+             break;
         case What1:
             [_jobCard.jobs[0] setWhat:_whatView1.text];
             break;
@@ -121,10 +125,18 @@
     [_frequencyField setText:_jobCard.frequency];
     [_timeField setText:_jobCard.time];
     [self selectSegmentForTitle:_jobCard.when control:_whenControl withDefaultSize:2];
+    [self updateLototoSwitchAnimated:NO];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [(PDFViewController*)[segue destinationViewController] prepareForJobCard: _jobCard];
+}
+
+- (void)updateLototoSwitchAnimated:(bool)animated {
+    bool enabled = [_jobCard.when isEqualToString:@"Stilstand"];
+    [_lototoSwitch setEnabled:enabled];
+    [_lototoSwitch setOn:enabled && _jobCard.lototo];
+    [_lototoSwitch setOn:enabled && _jobCard.lototo animated:animated];
 }
 
 - (void)selectSegmentForTitle:(NSString *)title control:(UISegmentedControl *) control withDefaultSize: (int) defaultSize {

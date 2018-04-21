@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98DB98208B984A0038CFD8 /* OverlayView.m */; };
+		ED98DB9F208BBB090038CFD8 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = ED98DB9E208BBB090038CFD8 /* lock.png */; };
 		ED9B84FF20722893007150AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B84FD20722893007150AD /* MainViewController.m */; };
 		ED9B851220726C65007150AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B851120726C65007150AD /* main.m */; };
 		ED9B85542072710A007150AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B85532072710A007150AD /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		ED385145208A6D9A003B0839 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
 		ED98DB97208B984A0038CFD8 /* OverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		ED98DB98208B984A0038CFD8 /* OverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		ED98DB9E208BBB090038CFD8 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		ED9B84FC20722893007150AD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		ED9B84FD20722893007150AD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		ED9B851120726C65007150AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 		EDFCEDDB206ACD550085DF5D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED98DB9E208BBB090038CFD8 /* lock.png */,
 				EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */,
 			);
 			path = "Supporting Files";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */,
+				ED98DB9F208BBB090038CFD8 /* lock.png in Resources */,
 				EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */,
 				ED9B85542072710A007150AD /* Main.storyboard in Resources */,
 				EDFCEDDD206ACD7A0085DF5D /* JobCards.sql in Resources */,
