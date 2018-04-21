@@ -35,21 +35,6 @@ typedef NS_ENUM(NSInteger, InputSource) {
     [super viewDidLoad];
 }
 
-- (IBAction)showPdf:(id)sender {
-    [self startActivityAnimation];
-    [self performSegueWithIdentifier:@"showPdf" sender:sender];
-}
-
-- (void)startActivityAnimation {
-    if (_activityIndicator == nil) {
-        _activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    }
-    if (_activityIndicatorItem.customView == nil) {
-        [_activityIndicatorItem setCustomView:_activityIndicator];
-    }
-    [_activityIndicator startAnimating];
-}
-
 - (IBAction)valueChanged:(UIView *)sender {
     switch (sender.tag) {
         case Title:

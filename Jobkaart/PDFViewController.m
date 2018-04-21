@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad {
     [self createPDF:_jobCard];
-    [_container setBackgroundColor:_pdfView.scrollView.backgroundColor];
-    [_pdfView setNavigationDelegate:self];
+    [_pdfView.scrollView setClipsToBounds:false];
+    [_pdfView.scrollView setShowsHorizontalScrollIndicator:NO];
+    [_pdfView.scrollView setShowsVerticalScrollIndicator:NO];
+    [_pdfView setBackgroundColor:[UIColor whiteColor]];
     [super viewDidLoad];
 }
 
@@ -47,14 +49,8 @@
     return pdfFileName;
 }
 
-- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
-    NSLog(@"test");
-    [self.view setBackgroundColor:_pdfView.scrollView.backgroundColor];
-    [_container setBackgroundColor:_pdfView.scrollView.backgroundColor];
-}
-
 - (IBAction)usePDF:(id)sender {
-
+    [self createPDF:_jobCard];
 }
 //
 //- (void)savePDF:(UIBarButtonItem *)sender {

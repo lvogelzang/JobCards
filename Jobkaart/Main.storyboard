@@ -4,10 +4,8 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -716,14 +714,11 @@
                         <viewLayoutGuide key="safeArea" id="tc7-Fb-rPb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Jobkaart" id="cd8-A6-FMU">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Maak" id="KhQ-qY-bSS">
-                                <connections>
-                                    <action selector="showPdf:" destination="uxa-P1-bby" id="cjW-yA-cxC"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem id="EFD-OQ-FfE"/>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Maak" id="KhQ-qY-bSS">
+                            <connections>
+                                <segue destination="n19-nO-Xxl" kind="show" id="8V6-0b-Yzi"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1925"/>
                     <connections>
@@ -733,7 +728,6 @@
                         <outlet property="actionView1" destination="OBQ-RN-ZEM" id="Xb6-KB-eZN"/>
                         <outlet property="actionView2" destination="FYB-EZ-Idl" id="Vgf-f3-JN8"/>
                         <outlet property="actionView3" destination="rc2-lZ-Jzp" id="fMj-gc-FTX"/>
-                        <outlet property="activityIndicatorItem" destination="EFD-OQ-FfE" id="a8v-8K-BQC"/>
                         <outlet property="basicConditionLabel1" destination="KU6-cM-a5S" id="qQW-yc-wHl"/>
                         <outlet property="basicConditionLabel2" destination="gEK-aX-YYx" id="r9b-kY-ASM"/>
                         <outlet property="basicConditionLabel3" destination="RS4-oF-yGa" id="2RE-LU-IiV"/>
@@ -764,7 +758,6 @@
                         <outlet property="withWhatLabel1" destination="GFJ-ag-NIU" id="jIu-Y5-nZj"/>
                         <outlet property="withWhatLabel2" destination="IZ3-Ac-nes" id="rbH-0c-XS8"/>
                         <outlet property="withWhatLabel3" destination="Sln-Dn-tFp" id="x0a-rI-4Z0"/>
-                        <segue destination="n19-nO-Xxl" kind="show" identifier="showPdf" id="hAZ-SH-J7W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ba-hE-BuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -779,40 +772,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Um-Zu-cto">
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qy7-eh-HtA" customClass="OverlayView">
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <subviews>
-                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AXC-rF-aTc">
+                                    <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DE-iJ-ry5">
                                         <rect key="frame" x="0.0" y="15" width="375" height="529"/>
                                         <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="AXC-rF-aTc" secondAttribute="height" multiplier="149:210" id="G2J-RA-Xx2"/>
+                                            <constraint firstAttribute="width" secondItem="3DE-iJ-ry5" secondAttribute="height" multiplier="149:210" id="3Up-aZ-fac"/>
                                         </constraints>
-                                        <wkWebViewConfiguration key="configuration">
-                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                            <wkPreferences key="preferences"/>
-                                        </wkWebViewConfiguration>
-                                    </wkWebView>
+                                    </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="AXC-rF-aTc" firstAttribute="centerX" secondItem="4Um-Zu-cto" secondAttribute="centerX" id="0bC-lX-9PA"/>
-                                    <constraint firstItem="AXC-rF-aTc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Um-Zu-cto" secondAttribute="leading" id="DIE-Fc-7tH"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AXC-rF-aTc" secondAttribute="trailing" id="EmV-ZM-wLt"/>
-                                    <constraint firstItem="AXC-rF-aTc" firstAttribute="centerY" secondItem="4Um-Zu-cto" secondAttribute="centerY" id="GUg-to-pHc"/>
-                                    <constraint firstItem="AXC-rF-aTc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4Um-Zu-cto" secondAttribute="top" id="T3F-qh-bd5"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AXC-rF-aTc" secondAttribute="bottom" id="yAK-Cl-bni"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="centerX" secondItem="Qy7-eh-HtA" secondAttribute="centerX" id="1CE-sj-b6P"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Qy7-eh-HtA" secondAttribute="top" id="84W-dV-t87"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3DE-iJ-ry5" secondAttribute="trailing" id="Lat-Zv-Luy"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="height" secondItem="Qy7-eh-HtA" secondAttribute="height" priority="100" id="erD-Ba-Ld4"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="centerY" secondItem="Qy7-eh-HtA" secondAttribute="centerY" id="fp0-yO-90q"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3DE-iJ-ry5" secondAttribute="bottom" id="l2Q-aw-oii"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="width" secondItem="Qy7-eh-HtA" secondAttribute="width" priority="100" id="ylU-rs-xHN"/>
+                                    <constraint firstItem="3DE-iJ-ry5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Qy7-eh-HtA" secondAttribute="leading" id="ypG-Ap-L7H"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="4Um-Zu-cto" firstAttribute="top" secondItem="1f7-NP-bqW" secondAttribute="top" id="Okq-yU-eCL"/>
-                            <constraint firstItem="AXC-rF-aTc" firstAttribute="width" secondItem="1f7-NP-bqW" secondAttribute="width" priority="100" id="XLs-sd-vmw"/>
-                            <constraint firstItem="4Um-Zu-cto" firstAttribute="leading" secondItem="1f7-NP-bqW" secondAttribute="leading" id="k4a-ot-gAh"/>
-                            <constraint firstItem="1f7-NP-bqW" firstAttribute="trailing" secondItem="4Um-Zu-cto" secondAttribute="trailing" id="mXF-Yw-BGC"/>
-                            <constraint firstItem="1f7-NP-bqW" firstAttribute="bottom" secondItem="4Um-Zu-cto" secondAttribute="bottom" id="muf-dc-QcW"/>
-                            <constraint firstItem="AXC-rF-aTc" firstAttribute="height" secondItem="1f7-NP-bqW" secondAttribute="height" priority="100" id="rff-Cy-fS9"/>
+                            <constraint firstItem="1f7-NP-bqW" firstAttribute="trailing" secondItem="Qy7-eh-HtA" secondAttribute="trailing" id="YbN-3r-DEn"/>
+                            <constraint firstItem="1f7-NP-bqW" firstAttribute="bottom" secondItem="Qy7-eh-HtA" secondAttribute="bottom" id="a14-cc-yuu"/>
+                            <constraint firstItem="Qy7-eh-HtA" firstAttribute="top" secondItem="1f7-NP-bqW" secondAttribute="top" id="idF-qm-IDC"/>
+                            <constraint firstItem="Qy7-eh-HtA" firstAttribute="leading" secondItem="1f7-NP-bqW" secondAttribute="leading" id="qNK-JO-wps"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1f7-NP-bqW"/>
                     </view>
@@ -826,8 +815,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="container" destination="4Um-Zu-cto" id="7S9-PV-5h5"/>
-                        <outlet property="pdfView" destination="AXC-rF-aTc" id="egR-Q2-8rD"/>
+                        <outlet property="pdfView" destination="3DE-iJ-ry5" id="9oE-NH-Flv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="le9-7u-qB3" userLabel="First Responder" sceneMemberID="firstResponder"/>

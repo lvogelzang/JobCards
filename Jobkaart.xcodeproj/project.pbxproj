@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED20E29C20836F07006A674D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED20E29A208224C0006A674D /* WebKit.framework */; };
+		ED385147208A71CA003B0839 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED20E29A208224C0006A674D /* WebKit.framework */; };
+		ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98DB98208B984A0038CFD8 /* OverlayView.m */; };
 		ED9B84FF20722893007150AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B84FD20722893007150AD /* MainViewController.m */; };
 		ED9B851220726C65007150AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B851120726C65007150AD /* main.m */; };
 		ED9B85542072710A007150AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B85532072710A007150AD /* Main.storyboard */; };
@@ -49,6 +50,9 @@
 
 /* Begin PBXFileReference section */
 		ED20E29A208224C0006A674D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ED385145208A6D9A003B0839 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		ED98DB97208B984A0038CFD8 /* OverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		ED98DB98208B984A0038CFD8 /* OverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		ED9B84FC20722893007150AD /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		ED9B84FD20722893007150AD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		ED9B851120726C65007150AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED20E29C20836F07006A674D /* WebKit.framework in Frameworks */,
+				ED385147208A71CA003B0839 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +119,7 @@
 		ED20E299208224C0006A674D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ED385145208A6D9A003B0839 /* PDFKit.framework */,
 				ED20E29A208224C0006A674D /* WebKit.framework */,
 			);
 			name = Frameworks;
@@ -140,6 +145,8 @@
 				EDFCEDBE206ACBF30085DF5D /* ImageFunctions.m */,
 				EDFCEDD5206ACD090085DF5D /* JobCardRenderer.h */,
 				EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */,
+				ED98DB97208B984A0038CFD8 /* OverlayView.h */,
+				ED98DB98208B984A0038CFD8 /* OverlayView.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -360,6 +367,7 @@
 				EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */,
 				EDFCEDC8206ACC4E0085DF5D /* JobView.m in Sources */,
 				EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */,
+				ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */,
 				ED9B84FF20722893007150AD /* MainViewController.m in Sources */,
 				EDFCEDBF206ACBF30085DF5D /* ImageFunctions.m in Sources */,
 				EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */,
@@ -527,6 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYCK2JYUQB;
 				INFOPLIST_FILE = Jobkaart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.Jobkaart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYCK2JYUQB;
 				INFOPLIST_FILE = Jobkaart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.lovocreations.Jobkaart;
 				PRODUCT_NAME = "$(TARGET_NAME)";

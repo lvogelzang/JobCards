@@ -10,13 +10,10 @@
 #import <WebKit/WebKit.h>
 #import "JobCard.h"
 
-@interface PDFViewController : UIViewController <WKNavigationDelegate>
+@interface PDFViewController : UIViewController
 
-//@property UIPopoverController *tpmPopoverController;
-//@property UIDocumentInteractionController *docController;
 @property JobCard *jobCard;
-@property (weak, nonatomic) IBOutlet UIView *container;
-@property (weak, nonatomic) IBOutlet WKWebView *pdfView;
+@property (weak, nonatomic) IBOutlet UIWebView *pdfView;
 
 - (void)prepareForJobCard:(JobCard *)jobCard;
 

@@ -12,8 +12,6 @@
 @interface MainViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *activityIndicatorItem;
-@property UIActivityIndicatorView *activityIndicator;
 @property JobCard *jobCard;
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
