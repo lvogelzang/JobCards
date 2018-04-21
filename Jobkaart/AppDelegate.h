@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Lodewijck Vogelzang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "MainViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>

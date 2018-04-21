@@ -6,20 +6,9 @@
 //  Copyright © 2018 Lodewijck. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "MainViewController.h"
 #import "PDFViewController.h"
 #import "DatabaseController.h"
-
-@interface MainViewController ()
-@end
-
-typedef NS_ENUM(NSInteger, InputSource) {
-    Title = 1, Focus, NumberOfJobs, Department, Installation, Machine, Part, SIS, Frequency, Time, When,
-    What1, WithWhat1, BasicCondition1, Action1,
-    What2, WithWhat2, BasicCondition2, Action2,
-    What3, WithWhat3, BasicCondition3, Action3
-};
 
 @implementation MainViewController
 
@@ -109,6 +98,7 @@ typedef NS_ENUM(NSInteger, InputSource) {
         default:
             [NSException raise:@"Invalid tag for sender" format:@"Invlid tag: %ld for sender: %@", (long)sender.tag, sender];
     }
+    [DatabaseController updateJobCard:_jobCard];
 }
 
 - (void)updateJobCardView {

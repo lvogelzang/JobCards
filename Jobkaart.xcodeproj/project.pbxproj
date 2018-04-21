@@ -20,7 +20,6 @@
 		EDFCEDBF206ACBF30085DF5D /* ImageFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDBE206ACBF30085DF5D /* ImageFunctions.m */; };
 		EDFCEDC2206ACC120085DF5D /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC1206ACC120085DF5D /* Job.m */; };
 		EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC4206ACC300085DF5D /* JobCard.m */; };
-		EDFCEDC8206ACC4E0085DF5D /* JobView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDC7206ACC4E0085DF5D /* JobView.m */; };
 		EDFCEDCE206ACCA60085DF5D /* PictureOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */; };
 		EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */; };
 		EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */; };
@@ -76,8 +75,6 @@
 		EDFCEDC1206ACC120085DF5D /* Job.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
 		EDFCEDC3206ACC300085DF5D /* JobCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCard.h; sourceTree = "<group>"; };
 		EDFCEDC4206ACC300085DF5D /* JobCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCard.m; sourceTree = "<group>"; };
-		EDFCEDC6206ACC4E0085DF5D /* JobView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobView.h; sourceTree = "<group>"; };
-		EDFCEDC7206ACC4E0085DF5D /* JobView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobView.m; sourceTree = "<group>"; };
 		EDFCEDCC206ACCA60085DF5D /* PictureOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureOverlayView.h; sourceTree = "<group>"; };
 		EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureOverlayView.m; sourceTree = "<group>"; };
 		EDFCEDCF206ACCC50085DF5D /* PictureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
@@ -178,8 +175,6 @@
 				ED9B85532072710A007150AD /* Main.storyboard */,
 				ED9B84FC20722893007150AD /* MainViewController.h */,
 				ED9B84FD20722893007150AD /* MainViewController.m */,
-				EDFCEDC6206ACC4E0085DF5D /* JobView.h */,
-				EDFCEDC7206ACC4E0085DF5D /* JobView.m */,
 				EDFCEDCC206ACCA60085DF5D /* PictureOverlayView.h */,
 				EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */,
 				EDFCEDCF206ACCC50085DF5D /* PictureViewController.h */,
@@ -363,7 +358,6 @@
 				EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */,
 				EDFCEDB9206ACB3E0085DF5D /* DatabaseController.m in Sources */,
 				EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */,
-				EDFCEDC8206ACC4E0085DF5D /* JobView.m in Sources */,
 				EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */,
 				ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */,
 				ED9B84FF20722893007150AD /* MainViewController.m in Sources */,

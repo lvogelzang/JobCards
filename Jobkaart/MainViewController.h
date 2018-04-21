@@ -11,6 +11,13 @@
 
 @interface MainViewController : UIViewController
 
+typedef NS_ENUM(NSInteger, InputSource) {
+    Title = 1, Focus, NumberOfJobs, Department, Installation, Machine, Part, SIS, Frequency, Time, When,
+    What1, WithWhat1, BasicCondition1, Action1,
+    What2, WithWhat2, BasicCondition2, Action2,
+    What3, WithWhat3, BasicCondition3, Action3
+};
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property JobCard *jobCard;
 
