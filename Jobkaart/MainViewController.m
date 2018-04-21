@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "PDFViewController.h"
 #import "DatabaseController.h"
+#import "Job.h"
 
 @implementation MainViewController
 
@@ -34,6 +35,13 @@
             break;
         case NumberOfJobs:
             [_jobCard setNumberOfJobs:_numberOfJobsControl.selectedSegmentIndex + 1];
+            while (self.jobCard.jobs.count < self.jobCard.numberOfJobs) {
+                [self.jobCard.jobs addObject:[[Job alloc] initForJobcardId:_jobCard.id jobNumber:_jobCard.jobs.count+1]];
+            }
+            while (self.jobCard.jobs.count > self.jobCard.numberOfJobs) {
+                [DatabaseController deleteJob:self.jobCard.jobs.count FromCard:self.jobCard.id];
+                [self.jobCard.jobs removeLastObject];
+            }
             break;
         case Department:
             [_jobCard setDepartment:_departmentField.text];

@@ -10,4 +10,15 @@
 
 @implementation Job
 
+- (Job *)initForJobcardId: (long)jobCardId jobNumber:(long)jobNumber {
+    self = [super init];
+    _jobCardid = jobCardId;
+    _id = jobNumber;
+    _what = @"";
+    _with = @"";
+    _basicCondition = @"";
+    _action = @"";
+    return self;
+}
+
 @end

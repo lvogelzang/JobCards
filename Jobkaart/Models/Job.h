@@ -21,4 +21,6 @@
 @property UIImage *image;
 @property UIImage *thumb;
 
+- (Job *)initForJobcardId: (long)jobCardId jobNumber:(long)jobNumber;
+
 @end
