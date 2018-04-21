@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED385147208A71CA003B0839 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED20E29A208224C0006A674D /* WebKit.framework */; };
 		ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98DB98208B984A0038CFD8 /* OverlayView.m */; };
 		ED9B84FF20722893007150AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B84FD20722893007150AD /* MainViewController.m */; };
 		ED9B851220726C65007150AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B851120726C65007150AD /* main.m */; };
@@ -95,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED385147208A71CA003B0839 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
