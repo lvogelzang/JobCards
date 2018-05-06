@@ -27,11 +27,11 @@
 
     // Draw rectangles.
     [self drawRect:CGRectMake(0, 0, 210, 35) color:red];
-    [self drawRect:CGRectMake(0, 35, 298, 28) color:gray];
+    [self drawRect:CGRectMake(0, 35, 298, 29) color:gray];
     [self drawRect:CGRectMake(0, 385, 298, 35) color:green];
 
     // Draw header text.
-    [self drawText:[NSString stringWithFormat:@"%ld", (long)jobCard.id] inRect:CGRectMake(7, 10, 30, 30) type:1];
+    [self drawText:[NSString stringWithFormat:@"%ld", (long)jobCard.id] inRect:CGRectMake(7, 9, 30, 30) type:1];
     [self drawText:jobCard.focus inRect:CGRectMake(37, 13, 40, 12) type:2];
     [self drawText:jobCard.department inRect:CGRectMake(67, 13, 113, 12) type:2];
     [self drawText:jobCard.frequency inRect:CGRectMake(150, 13, 80, 22) type:2];
@@ -54,11 +54,11 @@
 
     // Draw first column.
     [self drawText:@"Installatie/gebied:" inRect:CGRectMake(7, 38, 100, 12) type:4];
-    [self drawText:jobCard.installation inRect:CGRectMake(61, 38, 152, 12) type:0];
+    [self drawText:jobCard.installation inRect:CGRectMake(67, 38, 152, 12) type:0];
     [self drawText:@"Machine/plaats:" inRect:(CGRectMake(7, 46, 100, 12)) type:4];
-    [self drawText:jobCard.machine inRect:(CGRectMake(56, 46, 156, 12)) type:0];
+    [self drawText:jobCard.machine inRect:(CGRectMake(59, 46, 156, 12)) type:0];
     [self drawText:@"Onderdeel:" inRect:CGRectMake(7, 54, 40, 12) type:4];
-    [self drawText:jobCard.part inRect:CGRectMake(41, 54, 150, 12) type:0];
+    [self drawText:jobCard.part inRect:CGRectMake(44, 54, 150, 12) type:0];
 
     // Draw second column.
     [self drawText:@"SIS:" inRect:CGRectMake(210, 42, 16, 12) type:4];
@@ -89,7 +89,7 @@
 
     // Draw footer content.
     [self drawImage:[UIImage imageNamed:@"thumb"] inFrame:CGRectMake(7, 393, 20, 20)];
-    [self drawText:@"Indien er iets niet klopt of aangepast moet worden, plak een post-it op de jobkaart met de opmerking." inRect:CGRectMake(150, 395, 148, 30) type:6];
+    [self drawText:@"Indien er iets niet klopt of aangepast moet worden, plak een post-it op de jobkaart met de opmerking." inRect:CGRectMake(130, 395, 158, 30) type:6];
 
     // Close the PDF context and write the contents out.
     UIGraphicsEndPDFContext();
