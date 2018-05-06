@@ -25,6 +25,10 @@
     [super viewDidLoad];
 }
 
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    [self valueChanged: textView];
+}
+
 - (IBAction)valueChanged:(UIView *)sender {
     switch (sender.tag) {
         case Title:

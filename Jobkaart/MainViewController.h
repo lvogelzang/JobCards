@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JobCard.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UITextViewDelegate>
 
 typedef NS_ENUM(NSInteger, InputSource) {
     Title = 1, Focus, NumberOfJobs, Department, Installation, Machine, Part, SIS, Frequency, Time, When, LOTOTO, 
