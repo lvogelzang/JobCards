@@ -6,13 +6,10 @@
 //  Copyright (c) 2013 Lodewijck Vogelzang. All rights reserved.
 //
 
-#import "PDFViewController.h"
+#import "RenderViewController.h"
 #import "JobCardRenderer.h"
 
-@interface PDFViewController ()
-@end
-
-@implementation PDFViewController
+@implementation RenderViewController
 
 - (void)viewDidLoad {
     [self createPDF:_jobCard];

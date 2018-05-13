@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "JobCard.h"
 
-@interface PDFViewController : UIViewController
+@interface RenderViewController : UIViewController
 
 @property JobCard *jobCard;
 @property (weak, nonatomic) IBOutlet UIWebView *pdfView;

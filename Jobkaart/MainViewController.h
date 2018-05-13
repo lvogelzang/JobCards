@@ -19,7 +19,7 @@ typedef NS_ENUM(NSInteger, InputSource) {
 };
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property JobCard *jobCard;
+@property JobCard *selectedJobCard;
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *focusControl;
@@ -62,5 +62,6 @@ typedef NS_ENUM(NSInteger, InputSource) {
 @property (weak, nonatomic) IBOutlet UITextView *actionView3;
 
 - (IBAction)valueChanged:(id)sender;
+- (void)updateJobCardView:(JobCard *)jobCard;
 
 @end

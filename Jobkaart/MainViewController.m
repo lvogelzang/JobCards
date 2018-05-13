@@ -7,7 +7,8 @@
 //
 
 #import "MainViewController.h"
-#import "PDFViewController.h"
+#import "AppDelegate.h"
+#import "RenderViewController.h"
 #import "DatabaseController.h"
 #import "Job.h"
 
@@ -19,9 +20,7 @@
         [self setTextViewStyle:textViews[i]];
     }
     
-    _jobCard = [DatabaseController getJobCard];
-    [self updateJobCardView];
-    
+    [self updateJobCardView: self.selectedJobCard];
     [super viewDidLoad];
 }
 
@@ -30,117 +29,76 @@
 }
 
 - (IBAction)valueChanged:(UIView *)sender {
+    JobCard *jobCard = self.selectedJobCard;
+    
     switch (sender.tag) {
-        case Title:
-            [_jobCard setTitle:_titleField.text];
-            break;
-        case Focus:
-            [_jobCard setFocus:[self selectedTitle:_focusControl]];
-            break;
+        case Title: [jobCard setTitle:_titleField.text]; break;
+        case Focus: [jobCard setFocus:[self selectedTitle:_focusControl]]; break;
         case NumberOfJobs:
-            [_jobCard setNumberOfJobs:_numberOfJobsControl.selectedSegmentIndex + 1];
-            while (self.jobCard.jobs.count < self.jobCard.numberOfJobs) {
-                [self.jobCard.jobs addObject:[[Job alloc] initForJobcardId:_jobCard.id jobNumber:_jobCard.jobs.count+1]];
+            [jobCard setNumberOfJobs:_numberOfJobsControl.selectedSegmentIndex + 1];
+            while (jobCard.jobs.count < jobCard.numberOfJobs) {
+                [jobCard.jobs addObject:[[Job alloc] initForJobcardId:jobCard.id jobNumber:jobCard.jobs.count+1]];
             }
-            while (self.jobCard.jobs.count > self.jobCard.numberOfJobs) {
-                [DatabaseController deleteJob:self.jobCard.jobs.count FromCard:self.jobCard.id];
-                [self.jobCard.jobs removeLastObject];
+            while (jobCard.jobs.count > jobCard.numberOfJobs) {
+                [DatabaseController deleteJob:jobCard.jobs.count FromCard:jobCard.id];
+                [jobCard.jobs removeLastObject];
             }
             break;
-        case Department:
-            [_jobCard setDepartment:_departmentField.text];
-            break;
-        case Installation:
-            [_jobCard setInstallation:_installationField.text];
-            break;
-        case Machine:
-            [_jobCard setMachine:_machineField.text];
-            break;
-        case Part:
-            [_jobCard setPart:_partField.text];
-            break;
-        case SIS:
-            [_jobCard setSis:[self selectedTitle:_sisControl]];
-            break;
-        case Frequency:
-            [_jobCard setFrequency:_frequencyField.text];
-            break;
-        case Time:
-            [_jobCard setTime:_timeField.text];
-            break;
+        case Department: [jobCard setDepartment:_departmentField.text]; break;
+        case Installation: [jobCard setInstallation:_installationField.text]; break;
+        case Machine: [jobCard setMachine:_machineField.text]; break;
+        case Part: [jobCard setPart:_partField.text]; break;
+        case SIS: [jobCard setSis:[self selectedTitle:_sisControl]]; break;
+        case Frequency: [jobCard setFrequency:_frequencyField.text]; break;
+        case Time: [jobCard setTime:_timeField.text]; break;
         case When:
-            [_jobCard setWhen:[self selectedTitle:_whenControl]];
-            [self updateLototoSwitchAnimated:YES];
+            [jobCard setWhen:[self selectedTitle:_whenControl]];
+            [self updateLototoSwitchAnimated:YES jobCard:jobCard];
             break;
-        case LOTOTO:
-            [_jobCard setLototo:[_lototoSwitch isOn]];
-             break;
-        case What1:
-            [_jobCard.jobs[0] setWhat:_whatView1.text];
-            break;
-        case WithWhat1:
-            [_jobCard.jobs[0] setWith:_withWhatField1.text];
-            break;
-        case BasicCondition1:
-            [_jobCard.jobs[0] setBasicCondition:_basicConditionView1.text];
-            break;
-        case Action1:
-            [_jobCard.jobs[0] setAction:_actionView1.text];
-            break;
-        case What2:
-            [_jobCard.jobs[1] setWhat:_whatView2.text];
-            break;
-        case WithWhat2:
-            [_jobCard.jobs[1] setWith:_withWhatField2.text];
-            break;
-        case BasicCondition2:
-            [_jobCard.jobs[1] setBasicCondition:_basicConditionView2.text];
-            break;
-        case Action2:
-            [_jobCard.jobs[1] setAction:_actionView2.text];
-            break;
-        case What3:
-            [_jobCard.jobs[2] setWhat:_whatView3.text];
-            break;
-        case WithWhat3:
-            [_jobCard.jobs[2] setWith:_withWhatField3.text];
-            break;
-        case BasicCondition3:
-            [_jobCard.jobs[2] setBasicCondition:_basicConditionView3.text];
-            break;
-        case Action3:
-            [_jobCard.jobs[2] setAction:_actionView3.text];
-            break;
+        case LOTOTO: [jobCard setLototo:[_lototoSwitch isOn]]; break;
+        case What1: [jobCard.jobs[0] setWhat:_whatView1.text]; break;
+        case WithWhat1: [jobCard.jobs[0] setWith:_withWhatField1.text]; break;
+        case BasicCondition1: [jobCard.jobs[0] setBasicCondition:_basicConditionView1.text]; break;
+        case Action1: [jobCard.jobs[0] setAction:_actionView1.text]; break;
+        case What2: [jobCard.jobs[1] setWhat:_whatView2.text]; break;
+        case WithWhat2: [jobCard.jobs[1] setWith:_withWhatField2.text]; break;
+        case BasicCondition2: [jobCard.jobs[1] setBasicCondition:_basicConditionView2.text]; break;
+        case Action2: [jobCard.jobs[1] setAction:_actionView2.text]; break;
+        case What3: [jobCard.jobs[2] setWhat:_whatView3.text]; break;
+        case WithWhat3: [jobCard.jobs[2] setWith:_withWhatField3.text]; break;
+        case BasicCondition3: [jobCard.jobs[2] setBasicCondition:_basicConditionView3.text]; break;
+        case Action3: [jobCard.jobs[2] setAction:_actionView3.text]; break;
         default:
             [NSException raise:@"Invalid tag for sender" format:@"Invlid tag: %ld for sender: %@", (long)sender.tag, sender];
     }
-    [DatabaseController updateJobCard:_jobCard];
+    [DatabaseController updateJobCard:jobCard];
 }
 
-- (void)updateJobCardView {
-    [_titleField setText:_jobCard.title];
-    [self selectSegmentForTitle:_jobCard.focus control:_focusControl withDefaultSize:2];
-    [_numberOfJobsControl setSelectedSegmentIndex:_jobCard.numberOfJobs-1];
-    [_departmentField setText:_jobCard.department];
-    [_installationField setText:_jobCard.installation];
-    [_machineField setText:_jobCard.machine];
-    [_partField setText:_jobCard.part];
-    [self selectSegmentForTitle:_jobCard.sis control:_sisControl withDefaultSize:3];
-    [_frequencyField setText:_jobCard.frequency];
-    [_timeField setText:_jobCard.time];
-    [self selectSegmentForTitle:_jobCard.when control:_whenControl withDefaultSize:2];
-    [self updateLototoSwitchAnimated:NO];
+- (void)updateJobCardView:(JobCard *)jobCard {
+    self.selectedJobCard = jobCard;
+    [_titleField setText:jobCard.title];
+    [self selectSegmentForTitle:jobCard.focus control:_focusControl withDefaultSize:2];
+    [_numberOfJobsControl setSelectedSegmentIndex:jobCard.numberOfJobs-1];
+    [_departmentField setText:jobCard.department];
+    [_installationField setText:jobCard.installation];
+    [_machineField setText:jobCard.machine];
+    [_partField setText:jobCard.part];
+    [self selectSegmentForTitle:jobCard.sis control:_sisControl withDefaultSize:3];
+    [_frequencyField setText:jobCard.frequency];
+    [_timeField setText:jobCard.time];
+    [self selectSegmentForTitle:jobCard.when control:_whenControl withDefaultSize:2];
+    [self updateLototoSwitchAnimated:NO jobCard:jobCard];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [(PDFViewController*)[segue destinationViewController] prepareForJobCard: _jobCard];
+    [(RenderViewController*)[segue destinationViewController] prepareForJobCard: self.selectedJobCard];
 }
 
-- (void)updateLototoSwitchAnimated:(bool)animated {
-    bool enabled = [_jobCard.when isEqualToString:@"Stilstand"];
+- (void)updateLototoSwitchAnimated:(bool)animated jobCard:(JobCard *)jobCard {
+    bool enabled = [jobCard.when isEqualToString:@"Stilstand"];
     [_lototoSwitch setEnabled:enabled];
-    [_lototoSwitch setOn:enabled && _jobCard.lototo];
-    [_lototoSwitch setOn:enabled && _jobCard.lototo animated:animated];
+    [_lototoSwitch setOn:enabled && jobCard.lototo];
+    [_lototoSwitch setOn:enabled && jobCard.lototo animated:animated];
 }
 
 - (void)selectSegmentForTitle:(NSString *)title control:(UISegmentedControl *) control withDefaultSize: (int) defaultSize {

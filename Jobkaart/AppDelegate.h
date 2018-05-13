@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+- (void)createNewJobCard;
+- (void)selectJobCardWithId:(NSInteger)id;
+- (void)deleteJobCardWithId:(NSInteger)id;
+
 @end

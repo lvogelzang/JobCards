@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED871BB5209F71BC00DF7BC2 /* OverviewTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED871BB4209F71BC00DF7BC2 /* OverviewTableController.m */; };
+		ED871BB8209F72D500DF7BC2 /* JobCardMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = ED871BB7209F72D500DF7BC2 /* JobCardMetadata.m */; };
 		ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = ED98DB98208B984A0038CFD8 /* OverlayView.m */; };
 		ED98DB9F208BBB090038CFD8 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = ED98DB9E208BBB090038CFD8 /* lock.png */; };
 		ED9B84FF20722893007150AD /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B84FD20722893007150AD /* MainViewController.m */; };
 		ED9B851220726C65007150AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED9B851120726C65007150AD /* main.m */; };
 		ED9B85542072710A007150AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED9B85532072710A007150AD /* Main.storyboard */; };
-		EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED86206ACA520085DF5D /* AppDelegate.m */; };
+		EDD0C9D420A85258005765DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD0C9D320A85258005765DB /* AppDelegate.m */; };
 		EDFCED8F206ACA520085DF5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED8E206ACA520085DF5D /* Assets.xcassets */; };
 		EDFCED92206ACA520085DF5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDFCED90206ACA520085DF5D /* LaunchScreen.storyboard */; };
 		EDFCED9F206ACA520085DF5D /* JobkaartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCED9E206ACA520085DF5D /* JobkaartTests.m */; };
@@ -24,7 +26,7 @@
 		EDFCEDCE206ACCA60085DF5D /* PictureOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */; };
 		EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */; };
 		EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */; };
-		EDFCEDDA206ACD2D0085DF5D /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */; };
+		EDFCEDDA206ACD2D0085DF5D /* RenderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDFCEDD9206ACD2D0085DF5D /* RenderViewController.m */; };
 		EDFCEDDD206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
 		EDFCEDDE206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
 		EDFCEDDF206ACD7A0085DF5D /* JobCards.sql in Resources */ = {isa = PBXBuildFile; fileRef = EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */; };
@@ -50,6 +52,10 @@
 /* Begin PBXFileReference section */
 		ED20E29A208224C0006A674D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		ED385145208A6D9A003B0839 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		ED871BB3209F71BC00DF7BC2 /* OverviewTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverviewTableController.h; sourceTree = "<group>"; };
+		ED871BB4209F71BC00DF7BC2 /* OverviewTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverviewTableController.m; sourceTree = "<group>"; };
+		ED871BB6209F72D400DF7BC2 /* JobCardMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobCardMetadata.h; sourceTree = "<group>"; };
+		ED871BB7209F72D500DF7BC2 /* JobCardMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobCardMetadata.m; sourceTree = "<group>"; };
 		ED98DB97208B984A0038CFD8 /* OverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
 		ED98DB98208B984A0038CFD8 /* OverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
 		ED98DB9E208BBB090038CFD8 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
@@ -57,9 +63,9 @@
 		ED9B84FD20722893007150AD /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		ED9B851120726C65007150AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ED9B85532072710A007150AD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EDD0C9D220A85258005765DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EDD0C9D320A85258005765DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDFCED82206ACA520085DF5D /* Jobkaart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobkaart.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDFCED85206ACA520085DF5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EDFCED86206ACA520085DF5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EDFCED8E206ACA520085DF5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDFCED91206ACA520085DF5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDFCED93206ACA520085DF5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,8 +89,8 @@
 		EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 		EDFCEDD5206ACD090085DF5D /* JobCardRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JobCardRenderer.h; sourceTree = "<group>"; };
 		EDFCEDD6206ACD090085DF5D /* JobCardRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JobCardRenderer.m; sourceTree = "<group>"; };
-		EDFCEDD8206ACD2D0085DF5D /* PDFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
-		EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		EDFCEDD8206ACD2D0085DF5D /* RenderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderViewController.h; sourceTree = "<group>"; };
+		EDFCEDD9206ACD2D0085DF5D /* RenderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenderViewController.m; sourceTree = "<group>"; };
 		EDFCEDDC206ACD7A0085DF5D /* JobCards.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = JobCards.sql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +137,8 @@
 				EDFCEDC1206ACC120085DF5D /* Job.m */,
 				EDFCEDC3206ACC300085DF5D /* JobCard.h */,
 				EDFCEDC4206ACC300085DF5D /* JobCard.m */,
+				ED871BB6209F72D400DF7BC2 /* JobCardMetadata.h */,
+				ED871BB7209F72D500DF7BC2 /* JobCardMetadata.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,17 +180,19 @@
 		EDFCED84206ACA520085DF5D /* Jobkaart */ = {
 			isa = PBXGroup;
 			children = (
-				EDFCED85206ACA520085DF5D /* AppDelegate.h */,
-				EDFCED86206ACA520085DF5D /* AppDelegate.m */,
+				EDD0C9D220A85258005765DB /* AppDelegate.h */,
+				EDD0C9D320A85258005765DB /* AppDelegate.m */,
 				ED9B85532072710A007150AD /* Main.storyboard */,
 				ED9B84FC20722893007150AD /* MainViewController.h */,
 				ED9B84FD20722893007150AD /* MainViewController.m */,
+				ED871BB3209F71BC00DF7BC2 /* OverviewTableController.h */,
+				ED871BB4209F71BC00DF7BC2 /* OverviewTableController.m */,
 				EDFCEDCC206ACCA60085DF5D /* PictureOverlayView.h */,
 				EDFCEDCD206ACCA60085DF5D /* PictureOverlayView.m */,
 				EDFCEDCF206ACCC50085DF5D /* PictureViewController.h */,
 				EDFCEDD0206ACCC50085DF5D /* PictureViewController.m */,
-				EDFCEDD8206ACD2D0085DF5D /* PDFViewController.h */,
-				EDFCEDD9206ACD2D0085DF5D /* PDFViewController.m */,
+				EDFCEDD8206ACD2D0085DF5D /* RenderViewController.h */,
+				EDFCEDD9206ACD2D0085DF5D /* RenderViewController.m */,
 				ED9B85572072C2A2007150AD /* Models */,
 				ED9B85582072C2DA007150AD /* Utils */,
 				EDFCED8E206ACA520085DF5D /* Assets.xcassets */,
@@ -358,18 +368,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDFCEDDA206ACD2D0085DF5D /* PDFViewController.m in Sources */,
+				EDFCEDDA206ACD2D0085DF5D /* RenderViewController.m in Sources */,
 				EDFCEDD1206ACCC50085DF5D /* PictureViewController.m in Sources */,
 				EDFCEDB9206ACB3E0085DF5D /* DatabaseController.m in Sources */,
 				EDFCEDC5206ACC300085DF5D /* JobCard.m in Sources */,
-				EDFCED87206ACA520085DF5D /* AppDelegate.m in Sources */,
 				ED98DB99208B984A0038CFD8 /* OverlayView.m in Sources */,
+				ED871BB8209F72D500DF7BC2 /* JobCardMetadata.m in Sources */,
+				EDD0C9D420A85258005765DB /* AppDelegate.m in Sources */,
 				ED9B84FF20722893007150AD /* MainViewController.m in Sources */,
 				EDFCEDBF206ACBF30085DF5D /* ImageFunctions.m in Sources */,
 				EDFCEDD7206ACD090085DF5D /* JobCardRenderer.m in Sources */,
 				EDFCEDC2206ACC120085DF5D /* Job.m in Sources */,
 				ED9B851220726C65007150AD /* main.m in Sources */,
 				EDFCEDCE206ACCA60085DF5D /* PictureOverlayView.m in Sources */,
+				ED871BB5209F71BC00DF7BC2 /* OverviewTableController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
